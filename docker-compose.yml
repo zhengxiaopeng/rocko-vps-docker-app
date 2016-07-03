@@ -1,0 +1,25 @@
+shadowsocks: 
+    build: ./shadowsocks
+    ports:
+        - "6666:6666"
+        - "6667:6667"
+        - "6668:6668"
+    volumes:
+        - /var/log/shadowsocks.log:/var/log/shadowsocks.log
+ 
+duoshuo:
+    build: ./duoshuo   
+
+nginx:
+    build: ./nginx
+    ports:
+        - "80:80"
+    volumes:
+        - /var/log/nginx:/var/log/nginx
+
+gitserver:
+    build: ./gitserver
+    ports:
+        - "6060:22"
+    volumes:
+        - /repo/rocko:/repo

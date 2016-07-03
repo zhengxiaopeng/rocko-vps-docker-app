@@ -1,0 +1,13 @@
+[email_info]
+email_host = smtp.qq.com
+from_address = xxxx@qq.com
+password = email password
+to_address = send to
+
+[duoshuo_account]
+name = duoshuo_account
+secret = duoshuo_secret
+id = duoshuo_account_id
+
+[period_time]
+period = 35
